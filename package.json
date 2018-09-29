@@ -1,0 +1,39 @@
+{
+  "name": "parcel-react-tailwind",
+  "private": true,
+  "scripts": {
+    "watch": "parcel -p 8000 watch index.html",
+    "prettier": "prettier --write --loglevel error src/**/*.js",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "parcel",
+    "react",
+    "tailwind",
+    "prettier",
+    "eslint"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "postcss-modules": "^1.4.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "tailwindcss": "^0.6.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "eslint-plugin-react": "^7.11.1",
+    "parcel-bundler": "^1.10.1",
+    "prettier": "^1.14.3"
+  }
+}
