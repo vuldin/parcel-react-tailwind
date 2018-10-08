@@ -1,7 +1,10 @@
 import React from 'react'
 
 export default () => (
-  <div className="mt-2 self-center max-w-sm rounded overflow-hidden shadow-lg">
+  <div
+    id="card"
+    className="mt-2 self-center max-w-sm rounded overflow-hidden shadow-lg"
+  >
     <img
       className="w-full"
       src="https://tailwindcss.com/img/card-top.jpg"
