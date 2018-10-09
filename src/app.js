@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Provider } from 'unstated'
 
 import Container from './container'
 
@@ -13,4 +14,9 @@ const div = document.getElementById('app')
       return div
     })()
 
-render(<Container />, div)
+render(
+  <Provider>
+    <Container />
+  </Provider>,
+  div,
+)

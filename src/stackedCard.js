@@ -1,15 +1,12 @@
 import React from 'react'
+import img from '../media/card-top.jpg'
 
 export default () => (
   <div
     id="card"
     className="mt-2 self-center max-w-sm rounded overflow-hidden shadow-lg"
   >
-    <img
-      className="w-full"
-      src="https://tailwindcss.com/img/card-top.jpg"
-      alt="Sunset in the mountains"
-    />
+    <img className="w-full" src={img} alt="Sunset in the mountains" />
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
       <p className="text-grey-darker text-base">

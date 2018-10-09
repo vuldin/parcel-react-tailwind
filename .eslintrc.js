@@ -5,6 +5,7 @@ module.exports = {
     'cypress/globals': true,
   },
   extends: ['plugin:prettier/recommended'],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

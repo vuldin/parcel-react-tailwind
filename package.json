@@ -32,12 +32,15 @@
     "postcss-modules": "^1.4.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "tailwindcss": "^0.6.6"
+    "tailwindcss": "^0.6.6",
+    "unstated": "^2.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "cypress": "^3.1.0",
     "eslint": "^5.6.1",
     "eslint-config-prettier": "^3.1.0",
