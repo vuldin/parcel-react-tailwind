@@ -60,10 +60,15 @@ describe('UI test', function() {
   })
 
   describe('card', () => {
-    it('has correct heading', function() {
+    it('has correct heading', () => {
       cy.get('main').within(() => {
         cy.getByText('The Coldest Sunset').should.exist
       })
+    })
+    it('is centered', () => {
+      // testing implementation
+      cy.get('main').should('have.class', 'mx-auto')
+      cy.get('main > #card').should('have.class', 'self-center')
     })
     describe('sizes', () => {
       const cardSizes = [
