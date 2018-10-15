@@ -1,8 +1,3 @@
-// cypress has device resolutions pre-defined
-// iphone-6, 375x667
-// ipad-mini, 768x1024
-// macbook-11, 1366x768
-
 describe('UI test', function() {
   beforeEach(() => {
     cy.visit('/')
@@ -13,15 +8,15 @@ describe('UI test', function() {
     const message = 'Everything is good.'
     const removeTitle = 'remove'
 
-    it('exists', () => {
+    it('is visible', () => {
       cy.get('section#notifications').within(() => {
-        cy.get(id).should.exist
+        cy.get(id).should('be.visible')
       })
     })
     it('has correct title', () => {
       cy.get('section#notifications').within(() => {
         cy.get(id).within(() => {
-          cy.getByText(title).should.exist
+          cy.getByText(title).should('be.visible')
           cy.getByText(title).should('have.class', 'font-bold')
         })
       })
@@ -29,7 +24,7 @@ describe('UI test', function() {
     it('has correct message', () => {
       cy.get('section#notifications').within(() => {
         cy.get(id).within(() => {
-          cy.getByText(message).should.exist
+          cy.getByText(message).should('be.visible')
         })
       })
     })
@@ -43,6 +38,12 @@ describe('UI test', function() {
     })
 
     describe('sizes', () => {
+      // cypress has device resolutions pre-defined
+      // https://docs.cypress.io/api/commands/viewport.html#Arguments
+      // iphone-6, 375x667
+      // ipad-mini, 768x1024
+      // macbook-11, 1366x768
+
       const alertSizes = [
         { resolution: 'iphone-6', width: '375px' },
         { resolution: 'ipad-mini', width: '768px' },
