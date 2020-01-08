@@ -26,7 +26,7 @@ describe('UI test', function() {
     })
     context('at desktop size', () => {
       it('has correct width', () => {
-        cy.get('.bg-green-lightest').should('have.css', 'width', '992px')
+        cy.get('.bg-green-lightest').should('have.css', 'width', '983px')
       })
     })
     context('at mobile size', () => {
@@ -34,7 +34,7 @@ describe('UI test', function() {
         cy.viewport('iphone-6')
       })
       it('has correct width', () => {
-        cy.get('.bg-green-lightest').should('have.css', 'width', '375px')
+        cy.get('.bg-green-lightest').should('have.css', 'width', '358px')
       })
     })
   })

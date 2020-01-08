@@ -38,14 +38,8 @@ describe('UI test', function() {
     })
 
     describe('sizes', () => {
-      // cypress has device resolutions pre-defined
-      // https://docs.cypress.io/api/commands/viewport.html#Arguments
-      // iphone-6, 375x667
-      // ipad-mini, 768x1024
-      // macbook-11, 1366x768
-
       const alertSizes = [
-        { resolution: 'iphone-6', width: '375px' },
+        { resolution: 'iphone-6', width: '358px' },
         { resolution: 'ipad-mini', width: '768px' },
         { resolution: 'macbook-11', width: '1200px' },
       ]
@@ -73,7 +67,7 @@ describe('UI test', function() {
     })
     describe('sizes', () => {
       const cardSizes = [
-        { resolution: 'iphone-6', width: '375px' },
+        { resolution: 'iphone-6', width: '358px' },
         { resolution: 'ipad-mini', width: '480px' },
         { resolution: 'macbook-11', width: '480px' },
       ]
