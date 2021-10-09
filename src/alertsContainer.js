@@ -13,7 +13,7 @@ export default class StateContainer extends Container {
       },
     ],
   }
-  removeIndex = int => {
+  removeIndex = (int) => {
     this.setState({
       alerts: this.state.alerts.filter((alert, i) => i !== int),
     })

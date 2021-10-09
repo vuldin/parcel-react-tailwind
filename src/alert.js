@@ -1,10 +1,9 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 export default ({ color = 'red', title, message, remove }) => (
   <div
-    className={`mt-2 bg-${color}-lightest border border-${color}-light text-${color}-dark px-4 py-3 rounded relative`}
+    className={`mt-2 bg-${color}-300 border border-${color}-500 text-${color}-800 px-4 py-3 rounded relative`}
     role="alert"
     id={`${color}-toast`}
   >

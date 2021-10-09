@@ -1,15 +1,15 @@
-import React from 'react'
+import { Subscribe } from 'unstated'
+
 import Alert from './alert'
 import StackedCard from './stackedCard'
-import { Subscribe } from 'unstated'
 import alertsContainer from './alertsContainer'
 
 export default () => {
   return (
     <Subscribe to={[alertsContainer]}>
-      {alertsContainer => (
+      {(alertsContainer) => (
         <div className="container mx-auto flex flex-col">
-          <header className="text-2xl text-center bg-grey-light p-4">
+          <header className="text-2xl text-center bg-grey-300 p-4">
             parcel, react, tailwind, unstated, cypress
           </header>
           <section id="notifications">

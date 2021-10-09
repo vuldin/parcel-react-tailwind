@@ -1,6 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
 import { Provider } from 'unstated'
+import { render } from 'react-dom'
 
 import Container from './container'
 
