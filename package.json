@@ -7,7 +7,6 @@
     "start": "parcel -p 8080 index.html",
     "build": "parcel build index.html",
     "prettier": "prettier --write --loglevel error src/**/*.js",
-    "clean": "rimraf dist/* .cache/*",
     "cypress:open": "cypress open",
     "test": "cypress run"
   },
@@ -26,30 +25,17 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "alert": "^5.0.10",
     "autoprefixer": "^10.3.7",
     "postcss-modules": "^4.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "tailwindcss": "^2.2.16",
-    "unstated": "^2.1.1"
+    "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@testing-library/cypress": "^8.0.1",
     "cypress": "^8.5.0",
-    "cypress-testing-library": "^4.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.26.1",
-    "parcel": "latest",
-    "prettier": "^2.4.1",
-    "rimraf": "^3.0.2"
+    "parcel": "2.0.0-rc.0",
+    "prettier": "^2.4.1"
   }
 }

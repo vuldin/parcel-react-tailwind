@@ -1,7 +1,6 @@
-import { Provider } from 'unstated'
 import { render } from 'react-dom'
 
-import Container from './container'
+import Container from './Container'
 
 // get/create anchor element from body
 const div = document.getElementById('app')
@@ -13,9 +12,4 @@ const div = document.getElementById('app')
       return div
     })()
 
-render(
-  <Provider>
-    <Container />
-  </Provider>,
-  div,
-)
+render(<Container />, div)

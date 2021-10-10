@@ -15,13 +15,9 @@ describe('UI test', function () {
     it('has correct message', () => {
       cy.get('.bg-green-300 > :nth-child(2)').contains('Everything is good.')
     })
-    it('can be removed', async () => {
-      await cy.get('.bg-green-300 > :nth-child(3)').click().should('not.exist')
-      cy.get('.bg-green-300').should('not.exist')
-    })
     context('at desktop size', () => {
       it('has correct width', () => {
-        cy.get('.bg-green-300').should('have.css', 'width', '983px')
+        cy.get('.bg-green-300').should('have.css', 'width', '768px')
       })
     })
     context('at mobile size', () => {
@@ -29,7 +25,7 @@ describe('UI test', function () {
         cy.viewport('iphone-6')
       })
       it('has correct width', () => {
-        cy.get('.bg-green-300').should('have.css', 'width', '358px')
+        cy.get('.bg-green-300').should('have.css', 'width', '360px')
       })
     })
   })
@@ -39,7 +35,7 @@ describe('UI test', function () {
     })
     describe('at desktop size', () => {
       it('has correct width', () => {
-        cy.get('#card').should('have.css', 'width', '480px')
+        cy.get('#card').should('have.css', 'width', '384px')
       })
     })
   })
